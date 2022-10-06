@@ -1,0 +1,71 @@
+.ck.ck-toolbar button[data-cke-tooltip-text="Flex Grid"] svg {
+	fill: none;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 2;
+}
+.ck.ck-toolbar button[data-cke-tooltip-text="Flex Grid"] svg path {
+	fill: transparent;
+}
+.ck.ck-content .simple-grid {
+	display: flex;
+	flex-wrap: wrap;
+	position:relative;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid var(--ck-color-widget-blurred-border);
+	border-radius:var(--ck-border-radius);
+	background:hsla(0,0%,78%,.3);
+	color:var(--ck-color-base-text);
+	padding:20px 10px;
+	margin: var(--ck-spacing-large) auto;
+}
+.ck.ck-content .simple-grid[draggable="true"] {
+	cursor:move;
+}
+.ck.ck-content .simple-grid > .simple-grid-layout {
+	display:block;
+	position:relative;
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right:var(--ck-spacing-large);
+	padding-left:var(--ck-spacing-large);
+	border:none;
+	background:#FFF;
+	color:inherit;
+	flex: 1 0 0%;
+	word-wrap: break-word;
+	word-break: break-word;
+	outline:1px dotted var(--ck-color-widget-hover-border);
+	outline-offset:0;
+	border-color:var(--ck-color-widget-blurred-border)!important;
+}
+.ck.ck-content .simple-grid[data-type="layout2"] > .simple-grid-layout:first-of-type {
+	max-width: 25%;
+	flex-basis: 25%;
+}
+.ck.ck-content .simple-grid[data-type="layout3"] > .simple-grid-layout + .simple-grid-layout {
+	max-width: 25%;
+	flex-basis: 25%;
+}
+.ck.ck-content .simple-grid > .simple-grid-layout > *:nth-child(1) {margin-top:1.2em}
+.ck.ck-content .simple-grid > .simple-grid-layout > .simple-grid {
+	margin-top:calc(var(--ck-spacing-large) + 5px);
+	margin-bottom:calc(var(--ck-spacing-large) + 5px);
+}
+.ck.ck-content .simple-grid:after,.ck.ck-content .simple-grid > .simple-grid-layout:after {
+	content: attr(data-label);
+	position: absolute;
+	background: var(--ck-color-code-block-label-background);
+	color: #fff;
+	font-family: var(--ck-font-face);
+	font-size: 10px;
+	line-height: 1.2;
+	font-weight: normal;
+	padding: var(--ck-spacing-tiny) var(--ck-spacing-medium);
+	right: 10px;
+	top: -1px;
+	white-space: nowrap;
+}

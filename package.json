@@ -1,0 +1,29 @@
+{
+  "name": "@adnan-haider/two-layout-grid",
+  "version": "1.0.0",
+  "description": "Ckeditor5 Two Columns Layout Flex Grid Custom Plugin",
+  "main": "simplegrid.js",
+  "scripts": {
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnan-haider/Ckeditor5-flexGrid.git"
+  },
+  "keywords": [
+    "Ckeditor5",
+    "grids",
+    "ckeditor",
+    "flex",
+    "grid",
+    "ckeditor",
+    "column",
+    "grid"
+  ],
+  "author": "Syed Adnan Haider",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/adnan-haider/Ckeditor5-flexGrid/issues"
+  },
+  "homepage": "https://github.com/adnan-haider/Ckeditor5-flexGrid#readme"
+}
