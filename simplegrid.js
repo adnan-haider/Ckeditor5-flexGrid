@@ -6,4 +6,8 @@ export default class SimpleGrid extends Plugin {
     static get requires() {
         return [ SimpleGridEditing, SimpleGridUI ];
     }
+    
+	static get pluginName() {
+		return 'SimpleGrid';
+	}
 }
